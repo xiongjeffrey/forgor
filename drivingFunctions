@@ -1,8 +1,6 @@
-var elementsInsideBody = [...document.body.getElementsByTagName('*')];
-// This makes an array of everything inside the body tag
+var textElements = [...document.body.getElementsByTagName('*')]; // array gets everything within the body of the document
 
-
-//a function that loops through every single item
+// looping through the body of the text to find valid words
 function findAndReplace(){
   elementsInsideBody.forEach(element =>{
     element.childNodes.forEach(child =>{
@@ -14,9 +12,10 @@ function findAndReplace(){
   });
 }
 
+// replacing text
 function replaceText (node) {
   let value = node.nodeValue;
-  value = value.replace(*/ot/gi, 'or 💀');
+  value = value.replace(*/ot/gi, 'or 💀'); // modify with what you want!
   value = value.replace(*/er/gi, 'or 💀');
   node.nodeValue = value;
 }
