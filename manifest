@@ -1,4 +1,4 @@
-// default manifest document
+// default manifest document via: https://developer.chrome.com/docs/extensions/mv3/getstarted/
 
 {
   "name": "Forgor",
