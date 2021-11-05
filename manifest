@@ -1,0 +1,20 @@
+// default manifest document
+
+{
+  "name": "Forgor",
+  "description": "Replaces all words that end with -ot or -er with '-or 💀'",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "content_scripts": 
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
