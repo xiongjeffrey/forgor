@@ -13,7 +13,7 @@
 	[
 		{
 			"matches": ["*://*/*"],
-			"js": ["content_script.js"],
+			"js": ["drivingFunction.js"],
 			"run_at": "document_end"
 		}
 	]
